@@ -1,4 +1,4 @@
-# Jdrasil – A Modular Library for Computing Tree Decompositions
+# Jdrasil – A Tree Decompositions Library
 
 Jdrasil is a modular Java library for computing tree
 decompositions both, exact and heuristically. The goal of Jdrasil is
