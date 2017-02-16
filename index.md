@@ -15,7 +15,7 @@ decompositions.
 ## Getting Started
 Obtain the latest version of Jdrasil from the panel on the left
 site or directly here. Alternatively, download a previous version
-below.
+[below](#versions).
 
 If you wish to use Jdrasil as
 as standalone solver, we simple do the following:
@@ -78,3 +78,13 @@ compiled and used with the following commands:
 ```
   javac -cp Jdrasil.jar: Main.java
   java -cp Jdrasil.jar: Main
+```
+## Installing Upgrades
+If the performance of Jdrasil (especially in the exact mode) is not good enough, you may wish to install a SAT solver as upgrade. See the manual or the GitHub repo for more details about this topic.
+
+## Versions
+The following tables gives an overview of Jdrasil releases:
+
+Release | Manual
+------- | ------
+[Jdrasil-v0.1](http://maxbannach.github.io/Jdrasil/snapshots/Jdrasil-v0.1.jar) | [Manual-v0.1](http://maxbannach.github.io/Jdrasil/manual/manual-v0.1.pdf)
