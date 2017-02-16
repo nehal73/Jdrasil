@@ -23,13 +23,10 @@ as standalone solver, we simple do the following:
   # this will execute the exact mode
   java -jar Jdrasil.jar
 ```
-or alternatively
+Alternatively, you can execute Jdrasil in a specific mode (exact, heuristic, approximation)
+with one of the following commands:
 ```
   java -cp Jdrasil.jar jdrasil.Exact
-```
-In addition, you can execute Jdrasil in the heuristic or
-approximation mode:
-```
   java -cp Jdrasil.jar jdrasil.Heuristic
   java -cp Jdrasil.jar jdrasil.Approximation
 ```
@@ -39,3 +36,45 @@ manually in this mode. You may alternatively invoke the following command to obt
 ```
   java -cp Jdrasil.jar jdrasil.Heuristic -instant
 ```
+
+## Using Jdrasil as Library
+Jdrasil can also be used as
+library: simply add the `.jar` to the classpath of the desired
+project. For instance, the following simple program uses Jdrasil to
+compute an exact tree decomposition:
+```
+  import jdrasil.graph.*;
+  import jdrasil.algorithms.*;
+
+  public class Main {
+    public static void main(String[] args) {
+      // create your own graph
+      Graph<Integer> G = GraphFactory.emptyGraph();
+      for (int v = 1; v <= 5; v++) { G.addVertex(v); }
+      G.addEdge(1, 2);
+      G.addEdge(1, 4);
+      G.addEdge(2, 3);
+      G.addEdge(2, 4);
+      G.addEdge(4, 5);
+
+      // output graph in PACE format
+      System.out.println(G);
+      
+      // compute exact decomposition
+      TreeDecomposition<Integer> td = null;
+      try {
+        td = new ExactDecomposer<Integer>(G).call();
+      } catch (Exception e) {
+        System.out.println("something went wrong");
+      }
+
+      // ouput tree decomposition in PACE format
+      System.out.println(td);
+    }
+  }
+```
+If the program is stored in a file `Main.java`, it can be
+compiled and used with the following commands:
+```
+  javac -cp Jdrasil.jar: Main.java
+  java -cp Jdrasil.jar: Main
