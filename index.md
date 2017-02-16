@@ -14,7 +14,7 @@ decompositions.
 
 ## Getting Started
 Obtain the latest version of Jdrasil from the panel on the left
-site or directly here. Alternatively, download a previous version
+site or directly [here](current/Jdrasil.jar). Alternatively, download a previous version
 [below](#versions).
 
 If you wish to use Jdrasil as
