@@ -18,7 +18,7 @@ site or directly [here](current/Jdrasil.jar). Alternatively, download a previous
 [below](#versions).
 
 If you wish to use Jdrasil as
-as standalone solver, we simple do the following:
+as standalone solver, simply do the following:
 ```
   # this will execute the exact mode
   java -jar Jdrasil.jar
