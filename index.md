@@ -36,7 +36,6 @@ manually in this mode. You may alternatively invoke the following command to obt
 ```
   java -cp Jdrasil.jar jdrasil.Heuristic -instant
 ```
-
 ## Using Jdrasil as Library
 Jdrasil can also be used as
 library: simply add the `.jar` to the classpath of the desired
@@ -80,8 +79,7 @@ compiled and used with the following commands:
   java -cp Jdrasil.jar: Main
 ```
 ## Installing Upgrades
-If the performance of Jdrasil (especially in the exact mode) is not good enough, you may wish to install a SAT solver as upgrade. See the manual or the GitHub repo for more details about this topic.
-
+If the performance of Jdrasil (especially in the exact mode) is not good enough, you may wish to install a SAT solver as upgrade. See the [manual](current/manual.pdf) or the [GitHub repository](https://github.com/maxbannach/Jdrasil) for more details about this topic.
 ## Versions
 The following tables gives an overview of Jdrasil releases:
 
